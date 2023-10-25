@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>BMIの例題</title>
+	<script>
+		function calcBMI() {
+			let a = document.getElementById("i0").value;
+			let b = document.getElementById("i1").value;
+			let c = b / (a * a)
+			if (c < 18.5) {
+				document.write("<p>BMI:" + c + "は、痩せすぎです。</p>");
+			}else if ( c >= 18.5 && c < 25 ) {
+				document.write("<p>BMI:" + c + "は、標準です。</p>");
+			}else
+				document.write("<p>BMI:" + c + "は、肥満気味です。</p>");			
+		}
+	</script>
+</head>
+<body>
+	<h2>BMI計算機</h2>
+	身長(m):<input id="i0" value="1.7">
+	体重(kg):<input id="i1" value="65">
+	<button onclick="calcBMI()">check</button>
+	<p id="result"></p>
+</body>
+</html>
