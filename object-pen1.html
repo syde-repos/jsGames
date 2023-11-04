@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>オブジェクトのプロパティ参照例</title>
+		<script>
+			let pen = {
+				color: "赤",
+				length: 5,
+			};
+			function checkColor() {
+				document.getElementById("color").textContent = pen.color;
+			}
+			function checkLength() {
+				document.getElementById("length").textContent = pen.length;
+			}
+
+		</script>
+	</head>
+	<body>
+		<button onclick="checkColor()">色チェック</button>
+		<p>鉛筆の色は<span id="color"></span>色</p>
+		<button onclick="checkLength()">長さチェック</button>
+		<p>鉛筆の長さは<span id="length"></span>cm</p>
+	</body>
+</html>

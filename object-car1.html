@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>carオブジェクトのスピード・ガソリン量</title>
+		<script>
+			let car = {
+				speed: 140,
+				gass: 60,
+			};
+			function carSpeed() {
+				document.getElementById("speed").textContent = car.speed;
+			}
+			function carGass() {
+				document.getElementById("gass").textContent = car.gass;
+			}
+
+		</script>
+	</head>
+	<body>
+		<button onclick="carSpeed()">スピードチェック</button>
+		<p>車のスピードは<span id="speed"></span>km/h</p>
+		<button onclick="carGass()">ガソリン量チェック</button>
+		<p>車のガソリン量は<span id="gass"></span>l</p>
+	</body>
+</html>
