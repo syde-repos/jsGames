@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>3×3・〇×ゲーム</title>
+		<style>
+			#board{
+				background-color: black;
+			}
+			td.cell{
+				background-color: white;
+				width: 30px;
+				height: 30px; 
+			}
+		</style>
+		<script>
+			function init(){
+				let b = document.getElementById("board");
+				for (let i = 0; i < 3; i++){
+					let tr = document.createElement("tr");
+					for (let j = 0; j < 3; j++){
+						let td = document.createElement("td");
+						td.className = "cell";
+						td.id = "cell" + i + j;
+						td.onclick = clicked;
+						tr.appendChild(td);
+					}
+					b.appendChild(tr);
+				}
+			}
+			function clicked(e){
+				let id = e.target.id;
+				document.getElementById("id").textContent = 〇;
+			}
+		</script>
+	</head>
+	<body onload="init()">
+		<table id ="board"></table> 
+	</body>
+</html>
