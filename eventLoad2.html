@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>文書読み込み後に発火</title>
+		<script>
+			document.addEventListener("DOMContentLoaded",function(){
+				let h = document.getElementById("title");
+				h.textContent = "はじめまして";
+			});
+		</script>
+	</head>
+	<body>
+		<h1 id="title">こんにちは</h1>
+	</body>
+</html>
