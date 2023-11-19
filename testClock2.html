@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>時計</title>
+		<script>
+			window.onload = function (){
+				let now = new Date();
+				document.getElementById("hour").textContent = now.getHours();
+				document.getElementById("minute").textContent = now.getMinutes();
+				document.getElementById("second").textContent = now.getSeconds();
+			}
+		</script>
+	</head>
+	<body>
+		<p><span id="hour"></span>時　<span id="minute"></span>分　<span id="second"></span>秒　</p> 
+	</body>
+</html>
